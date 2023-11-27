@@ -201,513 +201,666 @@
             </ItemsControl.Template>
         </ItemsControl>
 
-        <ListView Grid.Column="3" Grid.Row="3" ScrollViewer.HorizontalScrollBarVisibility="Visible"
+        <DataGrid Grid.Column="3" Grid.Row="3" ScrollViewer.HorizontalScrollBarVisibility="Visible"
                   ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding Items}" VirtualizingPanel.IsVirtualizing="True"
-                  VirtualizingPanel.IsContainerVirtualizable="True">
-            <ListView.View>
-                <GridView ColumnHeaderContainerStyle="{StaticResource myHeaderStyle}">
-                    <GridViewColumn>
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                    <CheckBox Width="15" IsChecked="{Binding B1, IsAsync=True}"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+                  VirtualizingPanel.IsContainerVirtualizable="True" CanUserAddRows="False" CanUserDeleteRows="False"
+                  AutoGenerateColumns="False" HeadersVisibility="None"
+                  EnableColumnVirtualization="True" EnableRowVirtualization="True">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+                <DataGridCheckBoxColumn Binding="{Binding B1, IsAsync=True}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
