@@ -23,9 +23,72 @@ namespace LivetApp2.Views
      */
     public partial class MainWindow : Window
     {
+        #region Constants -------------------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Fields ----------------------------------------------------------------------------------------
+
+        private DataGridScrollSynchronizer _verticalScrollSynchronizer;
+        private DataGridScrollSynchronizer _horizontalScrollSynchronizer;
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Properties ------------------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Events ----------------------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Constructor -----------------------------------------------------------------------------------
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Methods ---------------------------------------------------------------------------------------
+
+        #region Methods - public ------------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Methods - internal ----------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Methods - protected ---------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Methods - private -----------------------------------------------------------------------------
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            var verticals = new List<ItemsControl>();
+            verticals.Add(rowHeader1);
+            verticals.Add(rowHeader2);
+            verticals.Add(rowHeader3);
+            verticals.Add(body);
+            _verticalScrollSynchronizer = new DataGridScrollSynchronizer(verticals, SynchronizeDirection.Vertical);
+
+            var horizontals = new List<ItemsControl>();
+            horizontals.Add(columnHeader1);
+            horizontals.Add(columnHeader2);
+            horizontals.Add(columnHeader3);
+            horizontals.Add(body);
+            _horizontalScrollSynchronizer = new DataGridScrollSynchronizer(horizontals, SynchronizeDirection.Horizontal);
+        }
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #region Methods - override ----------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
+
+        #endregion --------------------------------------------------------------------------------------------
     }
 }
